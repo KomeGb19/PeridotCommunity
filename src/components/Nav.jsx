@@ -13,8 +13,8 @@ const Nav = () => {
   const headerButton = <HeaderButton label="Talk to Us" iconURL={phone} />;
 
   return (
-    <header className="bg-peridot-purple relative z-10 my-6 mx-12 rounded-[161px] backdrop-blur-lg">
-      <nav className="max-container flex justify-between items-center px-9 py-3">
+    <header className="bg-peridot-purple relative my-6 mx-12 rounded-[161px] backdrop-blur-lg">
+      <nav className="max-container flex justify-between items-center gap-20 px-9 py-3">
         <a href="/">
           <img src={peridot2} alt="Logo" width={100} height={100} />
         </a>
