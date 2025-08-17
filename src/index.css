@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Anek+Devanagari:wght@100..800&family=Baloo+Bhai+2:wght@400..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+@layer utilities {
+	.max-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+/* Navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+	color: #4B4BB2;
+
+}
+
+
+/* Center arrows vertically */
+.swiper-button-next,
+.swiper-button-prev {
+	top: 45%;
+}
+
+/* Pagination dots */
+.swiper-pagination-bullet {
+	background: #4B4BB2;
+	/* deep purple */
+	opacity: 0.5;
+	transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+	background: #7c4dff;
+	/* accent purple */
+	opacity: 1;
+	transform: scale(1.2);
+}
