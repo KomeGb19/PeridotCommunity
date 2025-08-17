@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div id="home">
       <Nav />
-      <section className="flex justify-center items-center lg:flex-row flex-col-reverse p-2 relative pb-10 max-sm:px-4 max-md:pb-6">
+      <section className="flex justify-center items-center lg:flex-row flex-col-reverse p-2 relative pb-10 max-sm:px-4 max-md:pb-6 max-container">
         <div className="flex justify-center flex-col sm:px-16 px-8 max-sm:px-4 max-md:px-6">
           <h1 className="text-left text-8xl font-afacad font-semibold text-deep-purple max-w-xl mb-3 max-sm:text-4xl max-sm:max-w-full max-md:text-6xl max-md:max-w-lg">
             Dedicated Healthcare for a Caring Home
