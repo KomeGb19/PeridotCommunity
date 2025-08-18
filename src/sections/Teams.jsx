@@ -14,19 +14,16 @@ const Teams = () => {
       id="teams"
       className="w-full flex justify-center items-center flex-col bg-accent-purple pb-10"
     >
-      {/* Title */}
       <div className="flex justify-center items-center bg-deep-purple w-[203px] h-[64px] rounded-[94px] pt-2.5 mb-8 mt-10 sm:w-[150px] sm:h-[48px]">
         <h3 className="text-white font-anek font-semibold text-2xl text-center sm:text-lg">
           The Team
         </h3>
       </div>
 
-      {/* Subtitle */}
       <p className="text-xl text-deep-purple font-afacad max-w-[847px] text-center mb-16 sm:text-base sm:mb-8 sm:px-2">
         Compassion and Professionalism
       </p>
 
-      {/* Slider */}
       <div className="w-full max-w-6xl px-2 sm:px-0">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -36,9 +33,9 @@ const Teams = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 3000 }}
           breakpoints={{
-            640: { slidesPerView: 1, spaceBetween: 20 }, // mobile
-            768: { slidesPerView: 2, spaceBetween: 30 }, // tablets
-            1024: { slidesPerView: 3, spaceBetween: 40 }, // desktops
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
+            1024: { slidesPerView: 3, spaceBetween: 40 },
           }}
           className="pb-10"
         >

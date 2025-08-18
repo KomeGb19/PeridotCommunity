@@ -5,22 +5,30 @@ import {
   Footer,
   Teams,
   NewServices,
+  Services,
 } from "./sections";
+import { useState } from "react";
+import Modal from "./components/Modal";
 
 const App = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <main>
       <section>
-        <Hero />
+        <Hero showModal={showModal} setShowModal={setShowModal} />
       </section>
       <section>
         <AboutUs />
       </section>
       <section>
+        <Services />
+      </section>
+      <section>
         <NewServices />
       </section>
       <section>
-        <ContactUs />
+        <ContactUs showModal={showModal} setShowModal={setShowModal} />
       </section>
       <section>
         <Teams />
@@ -28,6 +36,7 @@ const App = () => {
       <section>
         <Footer />
       </section>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
     </main>
   );
 };
