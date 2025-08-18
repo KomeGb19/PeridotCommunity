@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div id="home">
       <Nav />
-      <section className="flex justify-center items-center lg:flex-row flex-col-reverse p-2 relative pb-10 max-sm:px-4 max-md:pb-6 max-container">
+      <section className="flex justify-center items-center lg:flex-row flex-col-reverse p-2 relative pb-10 max-sm:px-4 max-md:pb-6">
         <div className="flex justify-center flex-col sm:px-16 px-8 max-sm:px-4 max-md:px-6">
           <h1 className="text-left text-8xl font-afacad font-semibold text-deep-purple max-w-xl mb-3 max-sm:text-4xl max-sm:max-w-full max-md:text-6xl max-md:max-w-lg">
             Dedicated Healthcare for a Caring Home
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="absolute z-0 max-sm:hidden max-md:hidden">
           <img src={heroLine} alt="heroLine" />
         </div>
-        <div className="absolute left-[930px] top-[400px] max-sm:hidden max-md:hidden">
+        <div className="absolute left-[930px] top-[400px] l:hidden">
           <img src={certification2} width={200} />
         </div>
       </section>

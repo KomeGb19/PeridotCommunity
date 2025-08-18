@@ -3,8 +3,8 @@ import React from "react";
 const TeamCard = ({ imgURL, label, position }) => {
   return (
     <div className="flex justify-center items-center flex-1 flex-col w-full max-sm:w-full">
-      <div className="flex justify-center items-center bg-[#E6D6FC] rounded-full w-[302px] h-[286px]">
-        <div className="flex justify-center items-center bg-[#EDE1FF] rounded-full w-[274px] h-[260px]">
+      <div className="flex justify-center items-center bg-[#E6D6FC] rounded-full w-[280px] h-[280px]">
+        <div className="flex justify-center items-center bg-[#EDE1FF] rounded-full w-[260px] h-[260px]">
           <img src={imgURL} alt={label} />
         </div>
       </div>
