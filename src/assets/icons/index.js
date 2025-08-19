@@ -12,6 +12,7 @@ import hamburger2 from "./hamburger2.svg";
 import peridot2 from "./peridot2.svg";
 import certification2 from "./certification2.png";
 import phone2 from "./phone2.svg";
+import forwardArrow2 from "./forwardArrow2.svg";
 
 export {
   affordable,
@@ -28,4 +29,5 @@ export {
   peridot2,
   certification2,
   phone2,
+  forwardArrow2,
 };

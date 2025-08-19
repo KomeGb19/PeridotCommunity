@@ -5,7 +5,7 @@ import { certification2, heroLine, join } from "../assets/icons";
 import Nav from "../components/Nav";
 import { motion } from "framer-motion";
 
-const Hero = ({ setShowModal }) => {
+const Hero = ({ setShowModal, isHovered, setIsHovered }) => {
   // Variants
   const slideLeft = {
     hidden: { opacity: 0, x: -100 },
@@ -19,7 +19,11 @@ const Hero = ({ setShowModal }) => {
 
   return (
     <div id="home" className="relative">
-      <Nav setShowModal={setShowModal} />
+      <Nav
+        setShowModal={setShowModal}
+        isHovered={isHovered}
+        setIsHovered={setIsHovered}
+      />
       <section className="flex justify-center items-center lg:flex-row flex-col-reverse p-2 relative pb-10 max-sm:px-4 max-md:pb-6 ">
         <motion.div
           className="flex justify-center flex-col p-2"
@@ -84,7 +88,7 @@ const Hero = ({ setShowModal }) => {
         </motion.div>
 
         <motion.div
-          className="absolute z-0 max-sm:hidden max-md:hidden"
+          className="absolute pointer-events-none z-0 max-sm:hidden max-md:hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 1 }}

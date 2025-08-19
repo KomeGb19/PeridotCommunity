@@ -12,11 +12,17 @@ import Modal from "./components/Modal";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <main>
       <section>
-        <Hero showModal={showModal} setShowModal={setShowModal} />
+        <Hero
+          showModal={showModal}
+          setShowModal={setShowModal}
+          isHovered={isHovered}
+          setIsHovered={setIsHovered}
+        />
       </section>
       <section>
         <AboutUs />
@@ -25,7 +31,12 @@ const App = () => {
         <Services />
       </section>
       <section>
-        <NewServices />
+        <NewServices
+          showModal={showModal}
+          setShowModal={setShowModal}
+          isHovered={isHovered}
+          setIsHovered={setIsHovered}
+        />
       </section>
       <section>
         <ContactUs showModal={showModal} setShowModal={setShowModal} />

@@ -1,9 +1,10 @@
 import React from "react";
 import { peridotPurple } from "../assets/images";
 import ServicesButton from "../components/ServicesButton";
+import { forwardArrow, forwardArrow2 } from "../assets/icons";
 import { motion } from "framer-motion";
 
-const NewServices = () => {
+const NewServices = ({ setShowModal, isHovered, setIsHovered }) => {
   const slideLeft = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },
@@ -29,7 +30,7 @@ const NewServices = () => {
         </h3>
       </motion.div>
 
-      <div className="flex flex-col xl:flex-row justify-center items-center gap-10 xl:gap-20 w-full px-4">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-10 xl:gap-20 w-full px-4">
         <motion.div
           className="flex justify-center items-center bg-[#F8F3FF] w-full max-w-[412px] h-[180px] sm:h-[228px] border-deep-purple border rounded-[20px]"
           initial="hidden"
@@ -58,7 +59,13 @@ const NewServices = () => {
             services designed to meet the unique needs of individuals and
             families.
           </p>
-          <ServicesButton />
+          <ServicesButton
+            setShowModal={setShowModal}
+            isHovered={isHovered}
+            setIsHovered={setIsHovered}
+            hoverIconURL={forwardArrow2}
+            iconURL={forwardArrow}
+          />
         </motion.div>
       </div>
     </section>

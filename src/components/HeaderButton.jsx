@@ -7,15 +7,16 @@ const HeaderButton = ({
   className,
   hoverIconURL,
   setShowModal,
+  isHovered,
+  setIsHovered,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <button
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => setShowModal(true)}
       className={`flex justify-center items-center bg-deep-purple text-white px-4 py-2 gap-2 
-      rounded-[37px] font-semibold max-xl:hidden
+      rounded-[37px] font-semibold max-custom:hidden
       transform transition-all duration-300 ease-in-out
       hover:bg-white hover:text-deep-purple hover:shadow-lg hover:scale-105
       active:scale-95 ${className}`}

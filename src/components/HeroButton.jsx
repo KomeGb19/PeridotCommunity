@@ -11,7 +11,7 @@ const HeroButton = ({
     <button
       onClick={() => setShowModal(true)}
       className={`flex justify-center items-center gap-2 px-4 py-3 font-afacad rounded-[10px]
-      transform transition-all duration-300 ease-in-out group-hover
+      transform transition-all duration-300 ease-in-out
       hover:shadow-lg hover:scale-105 hover:-translate-y-1 active:scale-95
       ${
         backgroundColor
@@ -24,7 +24,7 @@ const HeroButton = ({
         <img
           src={iconURL}
           alt="join arrow"
-          className="w-5 h-5 transition-transform group-hover:translate-x-1"
+          className="w-5 h-5 transition-transform hover:translate-x-1"
         />
       )}
     </button>

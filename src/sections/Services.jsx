@@ -39,7 +39,7 @@ const Services = () => {
         support your well-being and independence.
       </motion.p>
 
-      <div className="flex justify-center items-center flex-col lg:flex-row gap-[70px]">
+      <div className="flex justify-center items-center flex-col lg:flex-row gap-[50px]">
         {services.map((cards, index) => (
           <motion.div
             key={cards.label}
