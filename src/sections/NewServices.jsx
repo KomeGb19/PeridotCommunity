@@ -47,14 +47,14 @@ const NewServices = ({ setShowModal, isHovered, setIsHovered }) => {
         </motion.div>
 
         <motion.div
-          className="flex justify-center items-center flex-col xl:items-start w-full max-w-[550px]"
+          className="flex justify-center items-center flex-col lg:items-start w-full max-w-[550px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, delay: 0.2 }}
           variants={slideRight}
         >
-          <p className="text-base sm:text-lg text-deep-purple font-afacad w-full p-4 xl:p-0 text-center xl:text-left mb-10">
+          <p className="text-base sm:text-lg text-deep-purple font-afacad w-full p-4 xl:p-0 text-center lg:text-left mb-10">
             At Peridot we provide compassionate and personalized home care
             services designed to meet the unique needs of individuals and
             families.
